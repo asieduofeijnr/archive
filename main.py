@@ -45,11 +45,9 @@ threepointsdf = threepointsdf.drop("index", axis=1)
 st.title("THREE POINTER 🐐")
 st.title("NBA Group 34")
 
-video_file = open("Hamza/hamza_video.mp4", "rb")
-video_bytes = video_file.read()
-# data = "https://drive.google.com/file/d/1ADAWy6pTBn3hpGxWTMqXDBqq0Fp3hdIp/view?pli=1"
+data = "https://photos.onedrive.com/share/7653AB837B3500E3!231679?cid=7653AB837B3500E3&resId=7653AB837B3500E3!231679&authkey=!AID9RXUD5x2Ruf0&ithint=video&e=xdZBHB"
 
-st.video(video_bytes)
+st.video(data)
 
 col_period_1, col_season_1 = st.columns(2)
 
@@ -255,7 +253,7 @@ fig3 = px.scatter(
     x="Season Start Year",
     y="3-Pt FG Made",
     color="Player",
-    size="Games Played",
+    size="3-Pt FG Attempts",
     hover_data="Season Type",
     width=850,
 )
