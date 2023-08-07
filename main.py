@@ -45,6 +45,12 @@ threepointsdf = threepointsdf.drop("index", axis=1)
 st.title("THREE POINTER 🐐")
 st.title("NBA Group 34")
 
+video_file = open("Hamza/hamza_video.mp4", "rb")
+video_bytes = video_file.read()
+# data = "https://drive.google.com/file/d/1ADAWy6pTBn3hpGxWTMqXDBqq0Fp3hdIp/view?pli=1"
+
+st.video(video_bytes)
+
 col_period_1, col_season_1 = st.columns(2)
 
 
@@ -185,7 +191,7 @@ b = three_for_graph["3-Pt FG Attempts"]
 c = three_for_graph["3-Pt FG Made"]
 
 # Create traces for 3points attempts and 3 points made
-fig = go.Figure(layout={"width": 800, "height": 500})
+fig = go.Figure(layout={"width": 850})
 fig.add_trace(go.Bar(x=x, y=a, name="Games Played"))
 fig.add_trace(
     go.Scatter(
@@ -211,7 +217,7 @@ pts_attempts = best_players_who_shot_three["3-Pt FG Attempts"]
 pts_made = best_players_who_shot_three["3-Pt FG Made"]
 
 
-fig2 = go.Figure(layout={"width": 800, "height": 500})
+fig2 = go.Figure(layout={"width": 850})
 fig2.add_trace(
     go.Bar(
         x=best_players,
@@ -251,6 +257,7 @@ fig3 = px.scatter(
     color="Player",
     size="Games Played",
     hover_data="Season Type",
+    width=850,
 )
 
 fig3.update_traces(visible="legendonly")
