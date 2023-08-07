@@ -1,3 +1,7 @@
+nbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_1690814868471/work
+numpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_07nxtsrh3m/croot/numpy_and_numpy_base_1687466221183/work
+openpyxl==3.1.2
 pandas==1.5.3
 plotly==5.15.0
 streamlit==1.25.0
+
