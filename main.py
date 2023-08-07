@@ -46,7 +46,7 @@ st.title("NBA Group 34")
 
 data = "https://photos.onedrive.com/share/7653AB837B3500E3!231679?cid=7653AB837B3500E3&resId=7653AB837B3500E3!231679&authkey=!AID9RXUD5x2Ruf0&ithint=video&e=xdZBHB"
 
-st.video(data)
+st.video(data, format="video/mp4")
 
 col_period_1, col_season_1 = st.columns(2)
 
