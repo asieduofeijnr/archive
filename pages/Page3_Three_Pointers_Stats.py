@@ -6,7 +6,7 @@ import streamlit as st
 st.set_page_config(
     page_title="MSDS_NBA_GROUP_34",
     page_icon="🏀",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="auto",
     menu_items=None,
 )
@@ -183,7 +183,7 @@ b = three_for_graph["3-Pt FG Attempts"]
 c = three_for_graph["3-Pt FG Made"]
 
 # Create traces for 3points attempts and 3 points made
-fig = go.Figure(layout={"width": 850})
+fig = go.Figure(layout={"width": 1200})
 fig.add_trace(go.Bar(x=x, y=a, name="Games Played"))
 fig.add_trace(
     go.Scatter(
@@ -209,7 +209,7 @@ pts_attempts = best_players_who_shot_three["3-Pt FG Attempts"]
 pts_made = best_players_who_shot_three["3-Pt FG Made"]
 
 
-fig2 = go.Figure(layout={"width": 850})
+fig2 = go.Figure(layout={"width": 1200})
 fig2.add_trace(
     go.Bar(
         x=best_players,
@@ -249,7 +249,7 @@ fig3 = px.scatter(
     color="Player",
     size="3-Pt FG Attempts",
     hover_data="Season Type",
-    width=850,
+    width=1200,
 )
 
 fig3.update_traces(visible="legendonly")
@@ -268,4 +268,4 @@ with tab3:
     st.plotly_chart(fig3, theme="streamlit")
 
 
-st.dataframe(best_players_who_shot_three)
+# st.dataframe(best_players_who_shot_three)

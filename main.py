@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 st.set_page_config(
     page_title="MSDS_NBA_GROUP_34",
     page_icon="🏀",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="auto",
     menu_items=None,
 )
