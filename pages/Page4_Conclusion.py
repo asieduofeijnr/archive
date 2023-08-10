@@ -13,14 +13,14 @@ st.set_page_config(
 
 st.title("CONCLUSION AND BUSINESS FINDINGS")
 
-st.write(
+st.subheader(
     "1. According to the top three-pointers, it's advisable to scout a player who makes more attempts at three-point shots."
 )
 st.markdown(
     "![Alt Text](https://media1.giphy.com/media/26vUQDMCgDXJb6932/giphy.gif?cid=ecf05e47azyyes4c0rma6u7u483xg1ezkg0goyad4s1qd4jd&ep=v1_gifs_search&rid=giphy.gif&ct=g)"
 )
 
-st.write(
+st.subheader(
     "2. From looking at the top two highest scoring players of all time, they both did extremely well offensively and defensively."
 )
 

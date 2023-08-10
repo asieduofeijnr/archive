@@ -207,6 +207,10 @@ fig.add_trace(
 games_played = best_players_who_shot_three["Games Played"]
 pts_attempts = best_players_who_shot_three["3-Pt FG Attempts"]
 pts_made = best_players_who_shot_three["3-Pt FG Made"]
+perc_score = (
+    best_players_who_shot_three["3-Pt FG Made"]
+    / best_players_who_shot_three["3-Pt FG Attempts"]
+) * 100
 
 
 fig2 = go.Figure(layout={"width": 1200})
@@ -238,6 +242,17 @@ fig2.add_trace(
         textposition="top center",
         name="3 PTS Made",
         visible="legendonly",
+    )
+)
+fig2.add_trace(
+    go.Scatter(
+        x=best_players,
+        y=perc_score,
+        mode="markers+lines+text",
+        name="Efficiency",
+        visible="legendonly",
+        text=round(perc_score, 0),
+        textposition="top center",
     )
 )
 
