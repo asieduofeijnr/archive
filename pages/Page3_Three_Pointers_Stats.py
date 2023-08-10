@@ -220,6 +220,7 @@ fig2.add_trace(
         y=games_played,
         text=games_played,
         name="Games Played",
+        visible="legendonly",
     )
 )
 fig2.add_trace(
@@ -250,7 +251,6 @@ fig2.add_trace(
         y=perc_score,
         mode="markers+lines+text",
         name="Efficiency",
-        visible="legendonly",
         text=round(perc_score, 0),
         textposition="top center",
     )
